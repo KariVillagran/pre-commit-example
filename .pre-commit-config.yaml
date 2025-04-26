@@ -16,3 +16,8 @@ repos:
         entry: powershell.exe -NoProfile -ExecutionPolicy Bypass -File pre-commit-hooks/pre-push.ps1
         language: system
         stages: [pre-push]
+      - id: check-merge-commit
+        name: Check merge commit
+        entry: powershell.exe -NoProfile -ExecutionPolicy Bypass -File pre-commit-hooks/pre-merge-commit.ps1
+        language: system
+        stages: [pre-merge-commit]
