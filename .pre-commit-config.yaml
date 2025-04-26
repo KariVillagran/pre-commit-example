@@ -3,3 +3,11 @@ repos:
     rev: 7.0.0  # versión estable de flake8
     hooks:
       - id: flake8
+
+  - repo: local
+    hooks:
+      - id: check-commit-message
+        name: Check Commit Message
+        entry: ./pre-commit-hooks/check-commit-msg.sh
+        language: script
+        stages: [commit-msg]
