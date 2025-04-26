@@ -20,4 +20,11 @@ pre-commit install --hook-type commit-msg
 pre-commit run --all-files
 ```
 
-Listo! Happy coding :D
+# Como configurar un nuevo hook
+
+Para poder contribuir con nuevos hooks, deberas:
+
+1. Editar el archivo `.pre-commit-config.yaml` para agregar tu nuevo hook
+2. Crear un .ps1 si estas en windows.
+
+Por cada nuevo hook, debes crear un nuevo archivo de validacion.
